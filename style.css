@@ -37,6 +37,7 @@ body{
     justify-content: center;
     align-items: center;
     padding: 12px;
+    margin-top: 50px;
     overflow: hidden;
     position: absolute;
     flex-wrap: wrap;
@@ -111,7 +112,6 @@ body{
 @media (min-width: 1200px) {
     .card {
       width: 30%;
-      margin-top: 50px;
       position: static;
     }
   }
