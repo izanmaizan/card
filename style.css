@@ -1,7 +1,166 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+footer{
+    font-size: 11px;
+    text-align: center;
+}
+
 *
 {
-    font-family: 'Inter', sans-serif;
-    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body{
+    background: rgba(255, 255, 255, 1);
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.container{
+    width: 100%;
+    display: flex;
+    overflow: auto;
+    min-height: 100vh;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.card{
+    gap: 16px;
+    top: 50px;
+    width: 315px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    overflow: hidden;
+    position: absolute;
+    flex-wrap: wrap;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) ;
+    align-items: flex-start;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.music-images img{
+    width: 135px;
+    height: 135px;
+    border-radius:6px;
+}
+
+.sidebar{
+    gap: 16px;
+    width: 139px;
+    display: flex;
+    flex-grow: 1;
+    align-items: flex-start;
+    flex-shrink: 0;
+    flex-direction: column;
+}
+
+.header{
+  gap: 10px;
+  display: flex;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.header-1{
+    color: #000;
+  height: auto;
+  font-size: 18px;
+  text-align: left;
+  font-weight: 900;
+}
+
+.header-2{
+  color: rgba(107, 103, 103, 1);
+  font-size: 12px;
+  text-align: left;
+  font-weight: 500;
+}
+
+.list{
+  gap: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: stretch;
+  align-items: flex-start;
+  flex-shrink: 0;
+}
+
+.inlist{
+  gap: 8px;
+  display: flex;
+  padding: 3px 7px;
+  align-items: center;
+  border-radius: 100px;
+  justify-content: center;
+  background-color: rgba(34, 29, 255, 1);
+  font-size: 10px;
+  color: #fff;
+}
+
+/* Media Query untuk layar dengan lebar 1200px ke atas (Laptop) */
+@media (min-width: 1200px) {
+    .card {
+      width: 30%;
+      top: 0;
+      position: static;
+    }
+  }
+  
+  /* Media Query untuk layar dengan lebar 991px hingga 1199px (Tablet) */
+  @media (min-width: 991px) and (max-width: 1199px) {
+    .card {
+      width: 30%;
+    }
+  }
+  
+  /* Media Query untuk layar dengan lebar 767px hingga 990px (Tablet Landscape) */
+  @media (min-width: 767px) and (max-width: 990px) {
+    .card {
+      width: 30%;
+    }
+  }
+  
+  /* Media Query untuk layar dengan lebar 469px hingga 766px (Smartphone Landscape) */
+  @media (min-width: 469px) and (max-width: 766px) {
+    .card {
+      width: 30%;
+    }
+  }
+  
+  /* Media Query untuk layar dengan lebar 468px ke bawah (Smartphone Portrait) */
+  @media (max-width: 468px) {
+    .card {
+      width: 30%;
+    }
+    .music-images img {
+      width: 100%;
+      height: auto;
+    }
+    .sidebar {
+      width: 100%;
+    }
+    .header-1 {
+      font-size: 16px;
+    }
+    .header-2 {
+      font-size: 10px;
+    }
+    .list {
+      justify-content: left;
+    }
+    .inlist {
+      font-size: 8px;
+      padding: 2px 5px;
+    }
+  }
+  
