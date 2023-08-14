@@ -112,6 +112,11 @@ footer {
   width: 100%;
 }
 
+.credit {
+  font-style: italic;
+  font-weight: 700;
+}
+
 /* Media Query untuk layar dengan lebar 1200px ke atas (Laptop) */
 @media (min-width: 1200px) and (max-width: 1488px) {
     .card {
